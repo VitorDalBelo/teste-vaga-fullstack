@@ -51,7 +51,7 @@ function validarLinha (data) {
     qtPrestacoes = new Number(data["qtPrestacoes"]);
     vlPresta = new Number(data["vlPresta"]);
   
-    data.valorDaPrestaçãoCorreto = vlPresta / qtPrestacoes == vlPresta ? "correto" : `errado ${vlPresta / qtPrestacoes == vlPresta}`
+    data.valorDaPrestaçãoCorreto = vlPresta / qtPrestacoes == vlPresta ? "correto" : `errado`
   
     data["vlTotal"] = formatarComoMoedaBRL(vlTotal);
     data["vlPresta"] = formatarComoMoedaBRL(vlPresta);

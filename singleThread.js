@@ -99,6 +99,6 @@ async function gerarNovoCSV(data) {
 
   const results = await parseCSV().then(data=> data.map(validarLinha));
 
-  console.log(gerarNovoCSV(results)); 
+  gerarNovoCSV(results)
   console.timeEnd("tempoExecucao"); 
 })();

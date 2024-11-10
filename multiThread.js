@@ -5,7 +5,7 @@ const { stringify } = require('csv-stringify');
 const si = require('systeminformation');
 
 const path = require('path');
-const { Worker, isMainThread, parentPort, workerData } = require('worker_threads');
+const { Worker} = require('worker_threads');
 
 async function parseCSV() {
   const results = [];
